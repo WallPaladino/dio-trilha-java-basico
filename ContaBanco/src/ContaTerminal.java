@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
 
-        Scanner ler = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int numero;
         String agencia;
@@ -12,11 +12,11 @@ public class ContaTerminal {
         System.out.println("Por favor, digite o número da Agência !");
         agencia = scanner.nextLine();
 
+        System.out.println("Por favor, digite o seu Nome ");
+        nomeCliente = scanner.nextLine();
+
         System.out.println("Por favor, digite o número da Conta !");
         numero = scanner.nextInt();
-
-        System.out.println("Por favor, digite o nome do Cliente !");
-        nomeCliente = scanner.next();
 
         System.out.println("Por favor, digite o seu Saldo !");
         saldo = scanner.nextFloat();
